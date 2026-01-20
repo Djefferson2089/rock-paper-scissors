@@ -1,0 +1,14 @@
+[project]
+name = "rps-cli"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[project.scripts]
+rps = "rps.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rps"]
